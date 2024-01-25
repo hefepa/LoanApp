@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="LoanApp" customModuleProvider="target">
+            <connections>
+                <outlet property="ezLabel" destination="i5O-RF-4QM" id="qnL-nk-Ehh"/>
+                <outlet property="fixedDepositLabel" destination="cQY-wF-9tf" id="1Sw-ZM-YJD"/>
+                <outlet property="img" destination="SQo-zS-paI" id="CJm-Sh-ZcZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loan" translatesAutoresizingMaskIntoConstraints="NO" id="SQo-zS-paI">
+                    <rect key="frame" x="17" y="340.33333333333331" width="359" height="264.99999999999994"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="265" id="d98-ec-T7s"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EZLOAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5O-RF-4QM">
+                    <rect key="frame" x="153" y="186" width="87" height="22.666666666666657"/>
+                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                    <color key="textColor" red="0.40392160420000001" green="0.39607840779999998" blue="0.90980386729999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fixed deposit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQY-wF-9tf">
+                    <rect key="frame" x="120" y="248.66666666666666" width="153" height="31.666666666666657"/>
+                    <color key="backgroundColor" red="0.40392160420000001" green="0.39607840779999998" blue="0.90980386729999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" name="MyanmarSangamMN" family="Myanmar Sangam MN" pointSize="20"/>
+                    <color key="textColor" red="0.94117647410000005" green="0.96862745289999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.98823529480000005" green="0.95686274770000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i5O-RF-4QM" secondAttribute="trailing" constant="153" id="3pf-JQ-OKD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cQY-wF-9tf" secondAttribute="trailing" constant="120" id="61b-wz-Nyv"/>
+                <constraint firstItem="i5O-RF-4QM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="127" id="I90-OH-PtE"/>
+                <constraint firstItem="cQY-wF-9tf" firstAttribute="top" secondItem="i5O-RF-4QM" secondAttribute="bottom" constant="40" id="J1h-cw-qKa"/>
+                <constraint firstItem="SQo-zS-paI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="Kas-uc-Yni"/>
+                <constraint firstItem="i5O-RF-4QM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="153" id="nwR-lR-qIk"/>
+                <constraint firstItem="SQo-zS-paI" firstAttribute="top" secondItem="cQY-wF-9tf" secondAttribute="bottom" constant="60" id="sCw-bi-lhB"/>
+                <constraint firstItem="cQY-wF-9tf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="120" id="ukX-Be-k5R"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SQo-zS-paI" secondAttribute="trailing" constant="17" id="xkY-WV-i5e"/>
+            </constraints>
+            <point key="canvasLocation" x="65" y="11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loan" width="356" height="265"/>
+    </resources>
+</document>
