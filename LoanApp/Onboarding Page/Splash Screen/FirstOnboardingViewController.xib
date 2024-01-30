@@ -4,13 +4,13 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstOnboardingViewController" customModule="LoanApp" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="GED-JR-ll0" id="i0t-jO-qvT"/>
+                <outlet property="pageControl" destination="Oj7-Oe-Mr5" id="fLb-gV-leM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,9 +19,9 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GED-JR-ll0">
-                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GED-JR-ll0">
+                    <rect key="frame" x="0.0" y="59" width="393" height="709"/>
+                    <color key="backgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Rff-Ew-9qP">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -29,21 +29,22 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Oj7-Oe-Mr5">
+                    <rect key="frame" x="120" y="792" width="153" height="26"/>
+                </pageControl>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.98431372640000003" green="0.95686274770000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="GED-JR-ll0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2OH-NM-Y2s"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GED-JR-ll0" secondAttribute="trailing" id="AYX-sz-APT"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GED-JR-ll0" secondAttribute="bottom" id="RXG-Ys-zQg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Oj7-Oe-Mr5" secondAttribute="trailing" constant="120" id="G5T-Zc-pGy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="GED-JR-ll0" secondAttribute="bottom" constant="50" id="RXG-Ys-zQg"/>
                 <constraint firstItem="GED-JR-ll0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="c4b-U9-VoN"/>
+                <constraint firstItem="Oj7-Oe-Mr5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="120" id="oDS-mB-pS2"/>
+                <constraint firstItem="Oj7-Oe-Mr5" firstAttribute="top" secondItem="GED-JR-ll0" secondAttribute="bottom" constant="24" id="vQ9-IW-fqD"/>
             </constraints>
             <point key="canvasLocation" x="102" y="20"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

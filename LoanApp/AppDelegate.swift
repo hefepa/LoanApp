@@ -14,20 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         Thread.sleep(forTimeInterval: 2)
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
-//            self.showMainInterface()
-        
         return true
     }
-    
-//    func showMainInterface() {
-//            // Load the XIB-based view controller
-//            let firstViewController = FirstViewController(nibName: "FirstViewController", bundle: nil)
-//
-//            // Set your view controller as the root view controller
-//            window?.rootViewController = firstViewController
-//            window?.makeKeyAndVisible()
-//        }
 
     // MARK: UISceneSession Lifecycle
 
